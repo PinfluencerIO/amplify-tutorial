@@ -7,7 +7,7 @@ import "@aws-amplify/ui-react/styles.css";
 function App() {
   return (
     <>
-      <Authenticator>
+      <Authenticator hideSignUp={true}>
         {({ signOut, user }) => (
           <div className="App">
             <p>Hey {user.username}, welcome to my channel, with auth!</p>
